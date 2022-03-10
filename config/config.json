@@ -1,0 +1,4 @@
+{
+   "MONGO_URL":"mongodb+srv://fbclone:YDZEfJeQvXQWyb8C@cluster0.ab1o2.mongodb.net/fbclone?retryWrites=true&w=majority",
+   "PORT":4440
+}
