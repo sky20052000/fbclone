@@ -1,4 +1,4 @@
-const config = require("./config/config.json");
+const config = require("./config.json");
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -21,6 +21,7 @@ mongoose.connect(config.MONGO_URL).then((data)=>{
 // routes
 app.use("/api/fbRoutes", require("./routes/fbRoute"));
 app.use("/api/postRoutes", require("./routes/postRoute"));
+
 const port = config.PORT || 4440;
 app.listen(port,(req,res)=>{
     console.log(`server listening on the : ${port}`);
